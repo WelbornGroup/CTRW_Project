@@ -1,0 +1,33 @@
+Step 1: Go to your folder where your python files are contained
+Step 2: Create a new conda environment
+
+module load Anaconda3/2020.11
+conda create -n mypy3 python=3.8 pip 
+source activate mypy3
+conda install ipykernel
+
+Step 3: Stay in the virtual environment
+Install numpy/scipy/pandas etc whatever your codes need
+You can get out of the venv by writing 'bash' in the command prompt
+To access the venv, use:
+module load Anaconda3/2020.11
+source activate mypy3
+
+Step 4: Once in venv, and all dependencies installed the submit script should look like this:
+
+#!/bin/bash -l
+##SBATCH -p normal_q
+#SBATCH -p dev_q
+#SBATCH -J <JOB_NAME>.py
+#SBATCH -N 1
+#SBATCH --ntasks-per-node 32
+#SBATCH -t 1:00:00 
+#SBATCH -A welbornlab
+
+echo start load env and run python
+
+python <CODE_NAME>.py
+
+exit;
+
+Step 5: Now you can submit the script. Yay!
