@@ -9,7 +9,7 @@ conda install ipykernel
 Step 3: Stay in the virtual environment
 Install numpy/scipy/pandas etc whatever your codes need
 You might want to update python or pip or any other command
-You can get out of the venv by writing 'bash' in the command prompt
+You can get out of the venv by writing 'conda deactivate' in the command prompt
 To access the venv, use:
 module load Anaconda3/2020.11
 source activate mypy3
