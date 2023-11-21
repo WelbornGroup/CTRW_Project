@@ -1,2 +1,2 @@
-# KineticMonteCarlo
-Everything done related to Kinetic Monte Carlo
+# CTRW_Project Rep
+Code and results to be uploaded for the CTRW paper
