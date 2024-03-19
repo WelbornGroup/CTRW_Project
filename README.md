@@ -4,8 +4,8 @@ Code and results to be uploaded for the CTRW paper
 Update - as of March 19, 2024.
 The following codes have been uploaded to the repository:
 1. makepore.py - makes the pore for the Nav 1.7 ion channel
-2. Dyn.py - runs the CTRW on any of the lattices using the "dynamic" assignment of rates.
-3. Stat.py - runs the CTRW on any of the lattices using the "static" assignment of rates.
+2. Dyn.py - runs the CTRW on any of the lattices using the "dynamic" assignment of rates. Uses the Log-Normal Distribution by default, to use the shifted gaussian, change the use of the function as given at the top of the code.
+3. Stat.py - runs the CTRW on any of the lattices using the "static" assignment of rates. Uses the Log-Normal Distribution by default, to use the shifted gaussian, change the use of the function as given at the top of the code.
 
 They need the following input files:
 1. 6j8i.pdb - pdb file for the Nav1.7, untouched.
